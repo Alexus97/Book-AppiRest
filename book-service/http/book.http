@@ -1,0 +1,31 @@
+###
+GET http://localhost:8080/api/books
+
+
+###
+GET http://localhost:8080/api/books/20479
+
+###
+POST http://localhost:8080/api/books
+Content-Type: application/json
+
+{
+    "isbn": "204576",
+    "title": "Programming in Angular",
+    "author": "Lexcorp Industries"
+}
+
+
+###
+PUT http://localhost:8080/api/books/20479
+Content-Type: application/json
+
+{
+    "isbn": "20479",
+    "title": "Advanced React Programming",
+    "author": "Axus Industries"
+}
+
+
+###
+DELETE http://localhost:8080/api/books/123457
